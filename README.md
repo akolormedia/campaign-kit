@@ -3,6 +3,28 @@
 Base workspace for advertising campaigns with Bradbit. One project holds
 **one client** and all of its campaigns, brand manuals and references.
 
+## When to use it
+Use this kit in an agency or freelance practice where a client has
+multiple campaigns. Keep the client context and brand once, then create a
+campaign folder for each brief.
+
+## Workflow
+1. `/client` — onboard the client and fill `brand/`.
+2. `/brief` — campaign brief.
+3. `/strategy` — audience, insight, positioning and proposition.
+4. `/concept` — creative territories and the big idea.
+5. `/copy` and `/art-direction` — produce the work.
+6. `/deliverable` — channel-ready pieces.
+7. `/deck` — Markdown client deck.
+8. `/status` — status and approvals.
+
+## Creating a project
+From the app: **New project** → **Advertising campaigns (campaign-kit)**.
+From the CLI:
+```bash
+bradbit init my-client --kit campaign-kit
+```
+
 ## Quick start
 
 1. Copy this folder as the repository for the client:
@@ -84,6 +106,14 @@ flow; there is no slide editor yet.
   books. If the agent needs a manual, keep an editable Markdown version
   in `brand/manual.md`.
 - For files larger than ~5 MB, use Git LFS or document an external link.
+
+## Language and aliases
+
+Kit instructions are English; the agent replies and writes deliverables in
+the language configured in Bradbit. Canonical command ids are English,
+with Spanish aliases when the app runs in Spanish (`/cliente`,
+`/estrategia`, `/concepto`, ...). The editor sends the canonical id to the
+runtime.
 
 ## Versioning
 
