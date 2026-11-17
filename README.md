@@ -1,5 +1,10 @@
 # campaign-kit
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Bradbit writing kit](https://img.shields.io/badge/Bradbit-writing%20kit-1c1917)](https://github.com/akolormedia/bradbit-editor)
+
+> Part of the Bradbit writing kits. Use it in **Bradbit Editor** or with `bradbit init`.
+
 Base workspace for advertising campaigns with Bradbit. One project holds
 **one client** and all of its campaigns, brand manuals and references.
 
@@ -126,3 +131,17 @@ only commits after the user approves. Never commit secrets or generated
 Technical note: Bradbit reads `.bradbit/` as the canonical kit folder. If
 you open the kit with OpenCode upstream, rename `.bradbit/` to
 `.opencode/`; Bradbit still reads `.opencode/` as legacy compatibility.
+
+## Documentation
+
+- [Bradbit Editor](https://github.com/akolormedia/bradbit-editor)
+- [Bradbit CLI](https://github.com/akolormedia/bradbit-cli)
+- [Installation guide](https://github.com/akolormedia/bradbit-editor/blob/main/docs/INSTALL.md) · [Español](https://github.com/akolormedia/bradbit-editor/blob/main/docs/INSTALL.es.md)
+
+## Contributing
+
+Issues and pull requests are welcome. Keep the kit declarative: agents, commands and skills belong in `.bradbit/`; instructions stay in English, canonical command IDs in English, and user-facing examples in Spanish.
+
+## License
+
+MIT. See [`LICENSE`](LICENSE). The kit is content; **Bradbit Editor** and **Bradbit CLI** are also MIT licensed.
